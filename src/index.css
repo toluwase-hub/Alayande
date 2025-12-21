@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.contain{
+    @apply w-[95%] mx-auto
+}
+.contains{
+    @apply w-[90%] mx-auto
+}
