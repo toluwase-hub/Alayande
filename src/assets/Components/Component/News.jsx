@@ -25,7 +25,7 @@ const News = () => {
       date: "December 17, 2025",
       image: (
         <img
-          src="../public/Schoolgate.jpg"
+          src="/public/Schoolgate.jpg"
           className="h-60 w-100 rounded-lg"
           alt=""
         />
@@ -40,7 +40,7 @@ const News = () => {
       date: "December 17, 2025",
       image: (
         <img
-          src="../public/Alao-akala.jpg"
+          src="/public/Alao-akala.jpg"
           className="h-60 w-100 rounded-lg"
           alt=""
         />
@@ -54,7 +54,7 @@ const News = () => {
       date: "December 17, 2025",
       image: (
         <img
-          src="../public/whats-2.jpeg"
+          src="/public/whats-2.jpeg"
           className="h-60 w-100 rounded-lg object-cover"
           alt=""
         />
@@ -80,7 +80,7 @@ const News = () => {
         date: "December 17, 2025",
         image: (
           <img
-            src="../public/whats-4.jpeg"
+            src="/public/whats-4.jpeg"
             className="h-60 w-100 rounded-lg object-cover"
             alt=""
           />
@@ -94,7 +94,7 @@ const News = () => {
         date: "December 17, 2025",
         image: (
           <img
-            src="../public/whats-3.jpeg"
+            src="/public/whats-3.jpeg"
             alt=""
             className="h-60 w-100 rounded-lg object-cover"
           />
@@ -108,7 +108,7 @@ const News = () => {
         date: "December 17, 2025",
         image: (
           <img
-            src="../public/whats-1.jpeg"
+            src="/public/whats-1.jpeg"
             alt=""
             className="h-60 w-100 rounded-lg object-cover"
           />

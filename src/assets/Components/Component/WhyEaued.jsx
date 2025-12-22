@@ -21,7 +21,7 @@ const WhyEaued = () => {
         "EAUED offers globally competitive academic programs designed in partnership with leading international institutions.",
       image: (
         <img
-          src="../public/Schoolgate.jpg"
+          src="/public/Schoolgate.jpg"
           className="h-60 w-100 rounded-lg"
           alt=""
         />
@@ -36,7 +36,7 @@ const WhyEaued = () => {
 
       image: (
         <img
-          src="../public/Alao-akala.jpg"
+          src="/public/Alao-akala.jpg"
           className="h-60 w-100 rounded-lg"
           alt=""
         />
@@ -50,7 +50,7 @@ const WhyEaued = () => {
 
       image: (
         <img
-          src="../public/imgi_17_campus.jpg"
+          src="/public/imgi_17_campus.jpg"
           className="h-60 w-100 rounded-lg"
           alt=""
         />

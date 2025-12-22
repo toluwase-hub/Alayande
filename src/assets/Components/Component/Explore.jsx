@@ -19,7 +19,7 @@ const Explore = () => {
         <div className="flex flex-col justify-center  relative h-150 lg:h-112.5">
           <div>
             <img
-              src="../public/Alao-akala.jpg"
+              src="/public/Alao-akala.jpg"
               className="object-cover h-150 lg:h-112.5"
               alt=""
             />
@@ -48,19 +48,19 @@ const Explore = () => {
           </div>
         </div>
         <div className="hidden lg:block">
-          <img src="../public/Alao-akala.jpg" alt="" />
+          <img src="/public/Alao-akala.jpg" alt="" />
         </div>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 ">
         <div className="hidden lg:block">
-          <img src="../public/imgi_16_success.jpg" alt="" />
+          <img src="/public/imgi_16_success.jpg" alt="" />
         </div>
 
         <div className="flex flex-col justify-center relative h-150 lg:h-112.5">
           <div>
             <img
-              src="../public/imgi_16_success.jpg"
+              src="/public/imgi_16_success.jpg"
               className="object-cover h-150 lg:h-112.5"
               alt=""
             />
@@ -94,7 +94,7 @@ const Explore = () => {
         <div className="flex flex-col justify-center  relative h-150 lg:h-112.5">
           <div>
             <img
-              src="../public/imgi_17_campus.jpg"
+              src="/public/imgi_17_campus.jpg"
               className="object-cover h-150 lg:h-112.5"
               alt=""
             />
@@ -124,7 +124,7 @@ const Explore = () => {
           </div>
         </div>
         <div className="hidden lg:block">
-          <img src="../public/imgi_17_campus.jpg" alt="" />
+          <img src="/public/imgi_17_campus.jpg" alt="" />
         </div>
       </div>
     </div>

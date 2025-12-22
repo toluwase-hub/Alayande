@@ -26,7 +26,7 @@ const Footer = () => {
             <div className="col-span-2">
               <div className="flex gap-3  items-center">
                 <img
-                  src="../public/school-logo_icon.png"
+                  src="/public/school-logo_icon.png"
                   className="w-17  h-20 object-cover"
                   alt=""
                 />
