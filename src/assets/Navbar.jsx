@@ -62,7 +62,7 @@ const Navbar = () => {
 
       <div className="bg-linear-to-r from-white from-5% via-[#000345] via-30% to-[#000345] to-95% border-b-3 border-white/50 w-screen">
         <nav className="flex items-center contain justify-between bg-linear-to-r from-white from-5% via-[#000345] via-30% to-[#000345] to-95% text-white px-1 py-3">
-          <img src="../public/imgi_1_footerlogo.png" className="h-10 lg:h-15 rounded  " alt="" />
+          <img src="/public/imgi_1_footerlogo.png" className="h-10 lg:h-15 rounded  " alt="" />
 
           {/* Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-6">
