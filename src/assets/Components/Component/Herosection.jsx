@@ -10,7 +10,7 @@ const Herosection = () => {
         playsInline
         className="h-[60vh]  w-full  object-fill lg:h-[87vh]"
       >
-        <source src="../src/assets/Components/herovedio.mp4" type="video/mp4" />
+        <source src="../public/herovedio.mp4" type="video/mp4" />
       </video>
 
       <div className="absolute inset-0 bg-black/50"></div>

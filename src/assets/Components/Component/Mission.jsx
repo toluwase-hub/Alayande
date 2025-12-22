@@ -11,7 +11,7 @@ const Mission = () => {
         easing: "ease-out",
         origin: "left",
         interval: 600,
-        reset: true,
+        reset: false,
       });
     }, []);
   return (

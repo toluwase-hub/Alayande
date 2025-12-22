@@ -4,12 +4,12 @@ import ScrollReveal from "scrollreveal";
 const Livemap = () => {
    useEffect(() => {
       ScrollReveal().reveal(".reveal", {
-        distance: "300px",
-        duration: 2000,
+        distance: "80px",
+        duration: 1000,
         easing: "ease-out",
-        origin: "bottom",
+        origin: "left",
         interval: 600,
-        reset: true,
+        reset: false,
       });
     }, []);
   const mapScr =

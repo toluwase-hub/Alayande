@@ -38,7 +38,6 @@ const Homepage = () => {
       <WhyEaued />
       <Gallary />
       <Livemap />
-      <Footer />
     </div>
   );
 };

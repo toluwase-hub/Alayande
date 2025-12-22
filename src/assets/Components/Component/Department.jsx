@@ -13,7 +13,7 @@ const Department = () => {
         easing: "ease-out",
         origin: "bottom",
         interval: 300,
-        reset: true,
+        reset: false,
       });
     }, []);
   return (

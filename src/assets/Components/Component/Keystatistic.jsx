@@ -9,7 +9,7 @@ const Keystatistic = () => {
         easing: "ease-out",
         origin: "bottom",
         interval: 600,
-        reset: true,
+        reset: false,
       });
     }, []);
   return (

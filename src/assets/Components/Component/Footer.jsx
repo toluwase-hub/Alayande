@@ -10,12 +10,12 @@ import ScrollReveal from "scrollreveal";
 const Footer = () => {
    useEffect(() => {
       ScrollReveal().reveal(".reveal", {
-        distance: "300px",
-        duration: 2000,
+        distance: "100px",
+        duration: 800,
         easing: "ease-out",
         origin: "bottom",
         interval: 300,
-        reset: true,
+        reset: false,
       });
     }, []);
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
             <div className="col-span-2">
               <div className="flex gap-3  items-center">
                 <img
-                  src="../src/assets/Components/school-logo_icon.png"
+                  src="../public/school-logo_icon.png"
                   className="w-17  h-20 object-cover"
                   alt=""
                 />

@@ -11,6 +11,7 @@ import Studentportal from './assets/routes/Studentportal'
 import Staffpage from './assets/routes/Staffpage'
 import Event from './assets/routes/Event'
 import Backtotop from './assets/Components/Component/Backtotop'
+import Footer from './assets/Components/Component/Footer'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
         </Routes>
 
           <Backtotop />
+          <Footer />
 
         </BrowserRouter>
 

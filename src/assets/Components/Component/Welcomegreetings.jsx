@@ -6,12 +6,12 @@ import ScrollReveal from "scrollreveal";
 const Welcomegreetings = () => {
    useEffect(() => {
     ScrollReveal().reveal(".reveal", {
-      distance: "200px",
+      distance: "300px",
       duration: 2000,
       easing: "ease-in-out",
       origin: "left",
       interval: 600,
-      reset: true,
+      reset: false,
     });
   }, []);
   return (
@@ -88,7 +88,7 @@ const Welcomegreetings = () => {
 
         <div>
           <img
-            src="../src/assets/Components/imgi_2_vice chancellor.jpg"
+            src="../public/imgi_2_vice chancellor.jpg"
             className="h-75 w-175 rounded object-cover"
             alt=""
           />

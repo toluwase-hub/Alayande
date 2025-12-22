@@ -5,12 +5,12 @@ import ScrollReveal from "scrollreveal";
 const WhyEaued = () => {
    useEffect(() => {
       ScrollReveal().reveal(".reveal", {
-        distance: "300px",
+        distance: "100px",
         duration: 2000,
         easing: "ease-out",
         origin: "bottom",
-        interval: 600,
-        reset: true,
+        interval: 100,
+        reset: false,
       });
     }, []);
   const Whyus = [
@@ -21,7 +21,7 @@ const WhyEaued = () => {
         "EAUED offers globally competitive academic programs designed in partnership with leading international institutions.",
       image: (
         <img
-          src="../src/assets/Components/Schoolgate.jpg"
+          src="../public/Schoolgate.jpg"
           className="h-60 w-100 rounded-lg"
           alt=""
         />
@@ -36,7 +36,7 @@ const WhyEaued = () => {
 
       image: (
         <img
-          src="../src/assets/Components/Alao-akala.jpg"
+          src="../public/Alao-akala.jpg"
           className="h-60 w-100 rounded-lg"
           alt=""
         />
@@ -50,7 +50,7 @@ const WhyEaued = () => {
 
       image: (
         <img
-          src="../src/assets/Components/imgi_17_campus.jpg"
+          src="../public/imgi_17_campus.jpg"
           className="h-60 w-100 rounded-lg"
           alt=""
         />
