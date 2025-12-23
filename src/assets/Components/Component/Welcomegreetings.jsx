@@ -88,7 +88,7 @@ const Welcomegreetings = () => {
 
         <div>
           <img
-            src="/public/imgi_2_vice chancellor.jpg"
+            src="/images/imgi_2_vice chancellor.jpg"
             className="h-75 w-175 rounded object-cover"
             alt=""
           />
