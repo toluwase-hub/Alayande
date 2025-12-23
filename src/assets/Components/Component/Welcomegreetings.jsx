@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { FcGraduationCap } from "react-icons/fc";
 import { BsPersonFill } from "react-icons/bs";
 import ScrollReveal from "scrollreveal";
+import { Link } from "react-router-dom";
 
 const Welcomegreetings = () => {
    useEffect(() => {
@@ -80,10 +81,11 @@ const Welcomegreetings = () => {
               Prof. Olarenwaju O. Olaniyan Vice Chancellor
             </span>
           </p>
-
+            <Link to="/Aboutus">
           <button className="bg-linear-to-r from-white/40  from-5% via-[#000345] via-30% to-[#000345] to-95% py-3 rounded-sm px-3 font-bold text-white mt-6">
             Read More
           </button>
+          </Link>
         </div>
 
         <div>

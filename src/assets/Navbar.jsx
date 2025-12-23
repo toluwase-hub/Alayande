@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import { GoMultiSelect } from "react-icons/go";
 import { MdOutlineCancelPresentation } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
-import ClickAwayListener from "react-click-away-listener";
+import ClickAwayListener from "@mui/material/ClickAwayListener";
 import { Link } from "react-router-dom";
-import Studentportal from "./routes/Studentportal";
-
 import { ToastContainer, toast } from 'react-toastify';
 
 const Navbar = () => {
@@ -49,9 +47,7 @@ const Navbar = () => {
     setstudentportals(false);
   };
 
-  const Handlecontactings = ()=>{
-    toast.info('Contacting Us')
-  }
+ 
   return (
     <div className="relative">
       
@@ -67,7 +63,7 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-6">
             <li className="hover:text-white/80 cursor-pointer"><Link to="/">Home</Link></li>
-            <ClickAwayListener >
+            
               <li
                 className="hover:text-white/80 cursor-pointer flex items-center gap-2 relative  "
                 
@@ -79,7 +75,7 @@ const Navbar = () => {
                 </span></Link>
                
               </li>
-            </ClickAwayListener>
+            
             <ClickAwayListener onClickAway={Handleadmission}>
               <li
                 className="hover:text-white/80 cursor-pointer flex items-center relative gap-2 "
@@ -183,8 +179,7 @@ const Navbar = () => {
           </ul>
 
           <div>
-                       <button className="border py-2 px-3 rounded-lg hidden lg:block" 
-                       onClick={Handlecontactings}> Contact Us
+                       <button className="border py-2 px-3 rounded-lg hidden lg:block" > Contact Us
                        </button>
                         <ToastContainer  />
           </div>
@@ -229,7 +224,7 @@ const Navbar = () => {
 
 
       {/* Mobile Dropdown Menu */}
-      <ClickAwayListener onClickAway={HandleSide}>
+      {/* <ClickAwayListener onClickAway={HandleSide}> */}
       <div
         id="sidebar"
         className={`bg-[#000345] text-white  lg:hidden overflow-hidden transition-all duration-700 ease-in-out right-0   z-50 w-full h-100 absolute
@@ -346,13 +341,12 @@ const Navbar = () => {
         </ul>
 
          <div className="indent-6">
-                       <button className="border  py-2 px-3 rounded-lg  lg:hidden" 
-                       onClick={Handlecontactings}> Contact Us
+                       <button className="border  py-2 px-3 rounded-lg  lg:hidden" > Contact Us
                        </button>
                         <ToastContainer  />
           </div>
       </div>
-      </ClickAwayListener>
+      {/* </ClickAwayListener> */}
 
    
 
