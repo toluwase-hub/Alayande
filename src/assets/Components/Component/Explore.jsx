@@ -48,7 +48,7 @@ const Explore = () => {
           </div>
         </div>
         <div className="hidden lg:block">
-          <img src="/public/Alao-akala.jpg" alt="" />
+          <img src="/Alao-akala.jpg" alt="" />
         </div>
       </div>
 
