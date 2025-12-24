@@ -89,13 +89,15 @@ const Navbar = () => {
                   </span>
                 </span>
                 <div
-                  className={`absolute bg-[#000345] overflow-hidden rounded-md top-13 z-40 w-50 transition-all duration-400 text-white  ${
+                  className={`absolute bg-[#000345] overflow-hidden rounded-md top-13 z-40 w-50 transition-all duration-400 text-white px-2  ${
                     admission ? "max-h-200" : "max-h-0"
                   }`}
                 >
                 <ul className="">
-                    <li className="hover:text-white/80 border-b indent-3 py-2 border-white/40"> <Link to="/Admission">Undergraduate</Link></li>
-                    <li className="hover:text-white/80 py-2 indent-3">JUPEB</li>
+                    <li className="hover:text-white/80 border-b indent-3 py-2  border-white/40"> <Link to="/Admission">Undergraduate</Link></li>
+                    <li className="hover:text-white/80 py-2 indent-3 ">JUPEB</li>
+                     <a href="https://eportal.eauedoyo.edu.ng/ug/candidate" target="_blank" rel='noreferrer'> <li className="hover:text-white/80 py-2 indent-3 border-t  border-white/40 ">Application Portal</li></a>
+                    
                 </ul>
                  
                 </div>
@@ -121,8 +123,8 @@ const Navbar = () => {
                   } transition-all duration-500 `}
                 >
                  <ul>
-                    <li className="hover:text-white/80 border-b indent-3 py-2 border-white/40">  <Link to="/Studentportal">Payment Portal </Link></li>
-                    <li className="hover:text-white/80 py-2 indent-3">Eportal</li>
+                   <a href="https://eportal.eauedoyo.edu.ng/" target="_blank" rel='noreferrer' ><li className="hover:text-white/80 border-b indent-3 py-2 border-white/40">  Payment Portal</li></a> 
+                    <a href="https://eportal.eauedoyo.edu.ng/" target="_blank" rel='noreferrer'><li className="hover:text-white/80 py-2 indent-3">Eportal</li></a>
                  </ul>
                 </div>
               </li>
@@ -144,13 +146,13 @@ const Navbar = () => {
                   </span>
                 </span>
                 <div
-                  className={`absolute bg-[#000345] overflow-hidden rounded-md top-13 z-40 w-50 transition-all duration-400 text-white  ${
+                  className={`absolute bg-[#000345] overflow-hidden rounded-md top-13 z-40 w-50 transition-all duration-400 text-white px-2  ${
                     staffportal ? "max-h-200" : "max-h-0"
                   }`}
                 >
                 <ul className="">
                     <li className="hover:text-white/80 border-b indent-3 py-2 border-white/40">  <Link to="/Staffpage">Staff-portal </Link></li>
-                    <li className="hover:text-white/80 py-2 indent-3"> Staff-Email</li>
+                    <a href="https://webmail.eauedoyo.edu.ng/" target="_blank" rel='noreferrer'> <li className="hover:text-white/80 py-2 indent-3"> Staff-Email</li></a>
                 </ul>
                  
                 </div>

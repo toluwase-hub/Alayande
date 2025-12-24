@@ -8,19 +8,19 @@ import { FaYoutube } from "react-icons/fa";
 import ScrollReveal from "scrollreveal";
 
 const Footer = () => {
-   useEffect(() => {
-      ScrollReveal().reveal(".reveal", {
-        distance: "100px",
-        duration: 800,
-        easing: "ease-out",
-        origin: "bottom",
-        interval: 300,
-        reset: false,
-      });
-    }, []);
+//    useEffect(() => {
+//       ScrollReveal().reveal(".reveal", {
+//         distance: "100px",
+//         duration: 800,
+//         easing: "ease-out",
+//         origin: "bottom",
+//         interval: 300,
+//         reset: false,
+//       });
+//     }, []);
   return (
     <div className="bg-[#000345] py-10 ">
-      <div className="contains reveal">
+      <div className="contains ">
         <div className=" border-b border-white/30">
           <footer className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10  pt-10">
             <div className="col-span-2">
