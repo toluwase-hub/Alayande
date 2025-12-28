@@ -5,6 +5,7 @@ import { FaTractor } from "react-icons/fa";
 import { GrInspect } from "react-icons/gr";
 import { IoMdColorPalette } from "react-icons/io";
 import ScrollReveal from "scrollreveal";
+import { Link } from "react-router-dom";
 const Department = () => {
    useEffect(() => {
       ScrollReveal().reveal(".reveal", {
@@ -24,37 +25,51 @@ const Department = () => {
       <h1 className="text-white text-2xl lg:text-3xl text-center py-4">
         5 Faculties & 30 Departments
       </h1>
-      <div className="reveal contains grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-white py-10 gap-3">
-        <div className="bg-white/10 group py-7 px-5 rounded-lg group hover:bg-white/15 transition-all duration-150">
+   <div className="reveal contains grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-white py-10 gap-3">
+      <Link to="/Admission"> 
+        <div className="bg-white/10 group py-7 px-5 rounded-lg group hover:bg-white/15 transition-all duration-150 min-h-36">
           <span className="group-hover:text-blue-400">
             <IoMdColorPalette size={40} />
           </span>
           <h1>Faculty Of Arts Education</h1>
         </div>
-        <div className="bg-white/10 group py-7 px-5 rounded-lg group hover:bg-white/15 transition-all duration-150">
+        </Link>
+
+         <Link to="/Admission"> 
+        <div className="bg-white/10 group py-7 px-5 rounded-lg group hover:bg-white/15 transition-all duration-150 min-h-36">
           <span className="group-hover:text-blue-400">
             <GiMaterialsScience size={40} />
           </span>
           <h1>Faculty Of Science Education</h1>
         </div>
-        <div className="bg-white/10 group py-7 px-5 rounded-lg group hover:bg-white/15 transition-all duration-150">
+        </Link>
+
+         <Link to="/Admission"> 
+        <div className="bg-white/10 group py-7 px-5 rounded-lg group hover:bg-white/15 transition-all duration-150 min-h-36">
           <span className="group-hover:text-blue-400">
             <FaGalacticSenate size={40} />
           </span>
           <h1>Faculty Of Social Science Education</h1>
         </div>
-        <div className="bg-white/10 group py-7 px-5 rounded-lg group hover:bg-white/15 transition-all duration-150">
+        </Link>
+
+         <Link to="/Admission"> 
+        <div className="bg-white/10 group py-7 px-5 rounded-lg group hover:bg-white/15 transition-all duration-150 min-h-36">
           <span className="group-hover:text-blue-400">
             <GrInspect size={40} />
           </span>
-          <h1>Faculty Of Specialised And Professional Education</h1>
+          <h1 className="line-clamp-2">Faculty Of Specialised And Professional Education</h1>
         </div>
-        <div className="bg-white/10 group py-7 px-5 rounded-lg group hover:bg-white/15 transition-all duration-150">
+        </Link>
+
+         <Link to="/Admission"> 
+        <div className="bg-white/10 group py-7 px-5 rounded-lg group hover:bg-white/15 transition-all duration-150 max-h-36">
           <span className="group-hover:text-blue-400">
             <FaTractor size={40} />
           </span>
-          <h1>Faculty Of Vocational, Innovation And Engineering Education</h1>
+          <h1 className="line-clamp-3">Faculty Of Vocational, Innovation And Engineering Education</h1>
         </div>
+         </Link> 
       </div>
     </div>
   );

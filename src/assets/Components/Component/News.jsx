@@ -4,6 +4,7 @@ import { MdCalendarMonth } from "react-icons/md";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import ScrollReveal from "scrollreveal";
+import { Link } from "react-router-dom";
 const News = () => {
    useEffect(() => {
     ScrollReveal().reveal(".reveal", {
@@ -19,10 +20,10 @@ const News = () => {
   const [notifications, setNotifications] = useState([
     {
       id: 1,
-      title: "School fees Payment",
+      title: "Resumption Message",
       details:
-        "emmanuel alayande university of education oyo, the payment for 2025/2026 academy section as starts",
-      date: "December 17, 2025",
+        "VC\\\'s Resumption Message",
+      date: "January 5, 2026",
       image: (
         <img
           src="/images/Schoolgate.jpg"
@@ -34,27 +35,27 @@ const News = () => {
 
     {
       id: 2,
-      title: "School fees Payment",
+      title: "3rd Foundation Day Anniversary & Award of NCE Cerificates",
       details:
-        "emmanuel alayande university of education oyo, the payment for 2025/2026 academy section as starts",
-      date: "December 17, 2025",
+        "3rd Foundation Day Ceremony & Award of NCE Certificates",
+      date: "December 12, 2025",
       image: (
         <img
-          src="/images/Alao-akala.jpg"
-          className="h-60 w-100 rounded-lg"
+          src="\images\imgi_7_1765516905_1105693.jpg"
+          className="h-60 w-100 rounded-lg object-cover"
           alt=""
         />
       ),
     },
     {
       id: 3,
-      title: "School fees Payment",
+      title: "Annual Conference 2025 – Emmanuel Alayande University of Education, Oyo",
       details:
-        "emmanuel alayande university of education oyo, the payment for 2025/2026 academy section as starts",
-      date: "December 17, 2025",
+        "The Emmanuel Alayande University of Education, Oyo, is set to host its Annual Conference from Monday, 1st September to Thursday, 4th September 2025. The event will take place at the 500-Seater University Hall and will focus on the theme: Higher Education Mandates in Global Trends.",
+      date: "September 01, 2025",
       image: (
         <img
-          src="/images/whats-2.jpeg"
+          src="\images\imgi_6_1747730882_evt.png"
           className="h-60 w-100 rounded-lg object-cover"
           alt=""
         />
@@ -143,7 +144,7 @@ const News = () => {
             key={notification.id}
             className=" shadow-2xl group rounded-lg p-2"
           >
-            <div className="h-60 group-hover:scale-101 transition-all duration-150">
+            <div className="h-60 group-hover:scale-101 transition-all duration-150 object-cover">
               {notification.image}
             </div>
             <p className="text-black/90 text-sm font-bold flex items-center gap-3">
@@ -152,8 +153,13 @@ const News = () => {
               </span>
               <span>{notification.date}</span>
             </p>
-            <h1 className="font-bold text-xl">{notification.title}</h1>
-            <h4 className=" ">{notification.details}</h4>
+            <h1 className="font-bold text-xl line-clamp-2">{notification.title}</h1>
+            <h4 className="overflow-scroll h-19 note mt-2 ">{notification.details}</h4>
+             <Link to="/Event">
+          <button className="bg-linear-to-r from-white/40  from-5% via-[#000345] via-30% to-[#000345] to-95% py-3 rounded-sm px-3 font-bold text-white mt-6">
+            Read More
+          </button>
+          </Link>
           </div>
         ))}
       </div>

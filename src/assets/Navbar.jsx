@@ -7,6 +7,11 @@ import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 
 const Navbar = () => {
+
+  const Navlinks = ({isActive}) => isActive ? "text-white/80" : "text-white"
+
+  
+
   const [Show, setShow] = useState(false);
 
   // useState for desktop drop
@@ -56,19 +61,19 @@ const Navbar = () => {
 
       {/* Desktop Nav */}
 
-      <div className="bg-linear-to-r from-white from-5% via-[#000345] via-30% to-[#000345] to-95% border-b-3 border-white/50 w-screen">
+      <div className="bg-linear-to-r from-white from-5% via-[#000345] via-30% to-[#000345] to-95% border-b-3 border-white/50 w-screen ">
         <nav className="flex items-center contain justify-between bg-linear-to-r from-white from-5% via-[#000345] via-30% to-[#000345] to-95% text-white px-1 py-3">
-          <img src="/images/imgi_1_footerlogo.png" className="h-10 lg:h-15 rounded  " alt="" />
+          <img src="/images/imgi_1_footerlogo.png" className="h-10 lg:h-15 rounded  " alt="" /> 
 
           {/* Desktop Menu */}
           <ul className="hidden lg:flex items-center gap-6">
-            <li className="hover:text-white/80 cursor-pointer"><Link to="/">Home</Link></li>
+            <li className={`hover:text-white/80 cursor-pointer ${Navlinks}`}><Link to="/">Home</Link></li>
             
               <li
                 className="hover:text-white/80 cursor-pointer flex items-center gap-2 relative  "
                 
               >
-               <Link to="/Aboutus">  <span className="flex gap-1 justify-center items-center">
+               <Link to="/Aboutus">  <span className={`flex gap-1 justify-center items-center ${Navlinks}`}>
                   
                   <span>About Us</span>
                  
@@ -229,7 +234,7 @@ const Navbar = () => {
       {/* <ClickAwayListener onClickAway={HandleSide}> */}
       <div
         id="sidebar"
-        className={`bg-[#000345] text-white  lg:hidden overflow-hidden transition-all duration-700 ease-in-out right-0   z-50 w-full h-100 absolute
+        className={`bg-[#000345] text-white  lg:hidden  transition-all duration-700 ease-in-out right-0   z-50 w-full h-100 absolute overflow-y-scroll scrollbar-hide
     ${Show ? "max-h-200   " : "max-h-0 "}
   `}
       >
@@ -262,13 +267,14 @@ const Navbar = () => {
                   </span>
                 </span>
                 <div
-                  className={`  bg-black/30  rounded-md overflow-hidden   w-50 transition-all duration-400 text-white  ${
+                  className={`  bg-black/30  rounded-md overflow-hidden px-2  w-50 transition-all duration-400 text-white  ${
                     admissions ? "max-h-40" : "max-h-0"
                   }`}
                 >
                 <ul className="">
                     <li className="border-b indent-3 py-2 border-white/40"> <Link to="/Admission">Undergraduate</Link></li>
                     <li className="py-2 indent-3">JUPEB</li>
+                     <a href="https://eportal.eauedoyo.edu.ng/ug/candidate" target="_blank" rel='noreferrer'> <li className="hover:text-white/80 py-2 indent-3 border-t  border-white/40 ">Application Portal</li></a>
                 </ul>
                  
                 </div>
@@ -294,8 +300,8 @@ const Navbar = () => {
                   } transition-all duration-500 `}
                 >
                  <ul>
-                    <li className="border-b   indent-3 py-2 border-white-40">  <Link to="/Studentportal">Payment Portal </Link></li>
-                    <li className="py-2 indent-3">Eportal</li>
+                    <a href="https://eportal.eauedoyo.edu.ng/" target="_blank" rel='noreferrer' ><li className="hover:text-white/80 border-b indent-3 py-2 border-white/40">  Payment Portal</li></a> 
+                    <a href="https://eportal.eauedoyo.edu.ng/" target="_blank" rel='noreferrer'><li className="hover:text-white/80 py-2 indent-3">Eportal</li></a>
                  </ul>
                 </div>
               </li>
@@ -319,8 +325,8 @@ const Navbar = () => {
                   }`}
                 >
                 <ul className="">
-                    <li className="border-b indent-3 py-2 border-white/40">  <Link to="/Staffpage">Staff-portal </Link></li>
-                    <li className="py-2 indent-3"> Staff-Email</li>
+                    <li className="hover:text-white/80 border-b indent-3 py-2 border-white/40">  <Link to="/Staffpage">Staff-portal </Link></li>
+                    <a href="https://webmail.eauedoyo.edu.ng/" target="_blank" rel='noreferrer'> <li className="hover:text-white/80 py-2 indent-3"> Staff-Email</li></a>
                 </ul>
                  
                 </div>
