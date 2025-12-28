@@ -10,7 +10,7 @@ const Herosection = () => {
         playsInline
         className="h-[60vh]  w-full  object-fill lg:h-[87vh]"
       >
-        <source src="\videos\ReduceNavvedio.mp4" type="video/mp4" />
+        <source src="\images\ReduceNavvedio.mp4" type="video/mp4" />
       </video>
 
       <div className="absolute inset-0 bg-black/50"></div>
