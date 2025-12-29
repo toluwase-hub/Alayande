@@ -12,6 +12,8 @@ import Staffpage from './assets/routes/Staffpage'
 import Event from './assets/routes/Event'
 import Backtotop from './assets/Components/Component/Backtotop'
 import Footer from './assets/Components/Component/Footer'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
 
 function App() {
 
