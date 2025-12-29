@@ -37,7 +37,7 @@ const Herosection = () => {
 
    },
     { 
-    image: <img src="\public\images\whats-2.jpeg" alt="image9"  className="w-full  h-115 lg:h-130 object-cover"/>
+    image: <img src="\images\whats-2.jpeg" alt="image9"  className="w-full  h-115 lg:h-130 object-cover"/>
 
    }
 
