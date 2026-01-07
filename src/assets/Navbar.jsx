@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { GoMultiSelect } from "react-icons/go";
 import { MdOutlineCancelPresentation } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp } from "react-icons/io";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
@@ -89,8 +90,10 @@ const Navbar = () => {
             
                 <span className="flex gap-1  justify-center items-center  ">
                   <span>Admissions</span>
-                  <span className="mt-1">
-                    <IoIosArrowDown />
+                  <span className="mt-1 transition-all duration-500">
+                   {
+                    admission ?  <IoIosArrowUp /> :  <IoIosArrowDown/> 
+                   }
                   </span>
                 </span>
                 <div
@@ -118,8 +121,10 @@ const Navbar = () => {
                <span className="flex  gap-1 justify-center items-center">
                   
                   <span>Student Portal</span>{" "}
-                  <span className="mt-1">
-                    <IoIosArrowDown />
+                  <span className="mt-1 transition-all duration-500">
+                   {
+                    Studentportal ?  <IoIosArrowUp /> :  <IoIosArrowDown/> 
+                   }
                   </span>
                 </span>
                 <div
@@ -146,8 +151,10 @@ const Navbar = () => {
             
                <span className="flex gap-1  justify-center items-center  ">
                   <span>Staff portal</span>
-                  <span className="mt-1">
-                    <IoIosArrowDown />
+                  <span className="mt-1 transition-all duration-500">
+                   {
+                    staffportal ?  <IoIosArrowUp /> :  <IoIosArrowDown/> 
+                   }
                   </span>
                 </span>
                 <div
@@ -262,8 +269,10 @@ const Navbar = () => {
             
                 <span className="flex gap-1  justify-center items-center  ">
                   <span>Admissions</span>
-                  <span className="mt-1">
-                    <IoIosArrowDown /> 
+                  <span className="mt-1 transition-all duration-500">
+                   {
+                    admissions ?  <IoIosArrowUp /> :  <IoIosArrowDown/> 
+                   }
                   </span>
                 </span>
                 <div
@@ -290,8 +299,10 @@ const Navbar = () => {
                <span className="flex  gap-1 justify-center items-center">
                   
                   <span>Student Portal</span>{" "}
-                  <span className="mt-1">
-                    <IoIosArrowDown />
+                  <span className="mt-1 transition-all duration-500">
+                   {
+                    Studentportals ?  <IoIosArrowUp /> :  <IoIosArrowDown/> 
+                   }
                   </span>
                 </span>
                 <div
@@ -315,8 +326,10 @@ const Navbar = () => {
             
                <span className="flex gap-1  justify-center items-center  ">
                   <span>Staff portal</span>
-                  <span className="mt-1">
-                    <IoIosArrowDown />
+                  <span className="mt-1 transition-all duration-500">
+                   {
+                    staffportals ?  <IoIosArrowUp /> :  <IoIosArrowDown/> 
+                   }
                   </span>
                 </span>
                 <div
